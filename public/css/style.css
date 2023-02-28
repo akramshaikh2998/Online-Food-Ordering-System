@@ -1,0 +1,456 @@
+/* ------------------------------------------------ */
+/* -------------------  Common  -------------------- */
+/* ------------------------------------------------ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    font-family: 'Lato','Arial',sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #212121;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    height: 100%;
+    background-color: #F5F5F5;
+}
+
+header .navbar div a {
+    font-size: 20px;
+}
+
+header .navbar-default {
+    background-color: #D32F2F;
+    border-color: #BDBDBD;
+}
+
+header .navbar-default .navbar-brand:visited,
+header .navbar-default .navbar-brand:link {
+    color: #fff;
+}
+header .navbar-default .navbar-brand:hover,
+header .navbar-default .navbar-brand:focus {
+    color: #212121;
+    background:#fff;
+    transition: 0.2s;
+}
+
+header .navbar-default .navbar-nav > li > a:link,
+header .navbar-default .navbar-nav > li > a:visited {
+    color: #fff;
+    font-size: 20px;
+}
+
+header .navbar-default .navbar-nav > li > a:hover,
+header .navbar-default .navbar-nav > li > a:focus {
+    color: #212121;
+    background:#fff;
+    transition: 0.2s;
+}
+
+header .nav.navbar-nav a.active{
+    color: #fff;
+    background: #000;
+}
+
+header .nav.navbar-nav a.active:hover{
+    color: #000;
+    background: #fff;
+}
+
+
+/* ------------------------------------------------ */
+/* -------------------  INDEX  -------------------- */
+/* ------------------------------------------------ */
+
+/* -----------------Header------------ */
+
+/* body.main{
+    /* background with an image */
+    /* background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0, 0, 0, 0.8)),url("../img/background.jpeg"); */
+    /* background-position: center; */
+    /* background-size: cover; */
+    /* background-attachment: fixed;    */
+    /* background-repeat: no-repeat; */
+/* } */ 
+
+.main{
+    /* background with an image */
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0, 0, 0, 0.8)),url("../img/background.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;   
+    background-repeat: no-repeat;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 20px;
+}
+
+div.jumbotron {
+    background: none;
+    color:#fff;
+}
+
+.vertical-center {
+    min-height: 90vh; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center; 
+    align-content: center;
+}
+
+div.jumbotron > h1,h3 {
+    text-align: center;
+}
+
+div.jumbotron.vertical-center  h1 {
+    font-size: 2.5em;
+}
+
+div.jumbotron.vertical-center  h3 {
+    font-size: 1.4em;
+}
+
+/* -----------------Button------------ */
+
+.btn.main-button:link ,
+.btn.main-button:visited{
+    display: inline-block;
+    width: 12rem;
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    border-radius: 200px;
+    color:#fff;
+    transform: translateX(1%);
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+    background-color: #D32F2F;
+    border:1px solid #D32F2F;
+    margin-top: 20px;
+}
+
+.btn.main-button:hover,
+.btn.main-button:active{
+    background-color: #F44336;
+    border:1px solid #F44336; 
+}
+
+/* ------------------------------------------------ */
+/* -------------------  MENU  -------------------- */
+/* ------------------------------------------------ */
+
+.category {
+    text-align: center;
+}
+
+.category-choice {
+    list-style-type: none;
+    text-align: center;
+    /* font-size: 1em; */
+    font-size: 20px;
+}
+
+.category-choice > li{
+    display: inline;
+    text-transform: uppercase;
+    padding: 0 10px;
+}
+
+.category-choice > li > a{
+    color: #757575;
+    text-decoration: none;
+}
+
+.category-choice > li > a:hover {
+    color: #D32F2F;
+}
+
+.category-choice > li > a.category-active{
+    color: #D32F2F;
+}
+
+div.row.Item {
+    width: 290px;
+    height: 500px;
+}
+
+div.thumbnail {
+    border: none;
+}
+
+.Title {
+    font-size: 18px;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 3px;
+}
+
+.Description,
+.Price {
+    font-size: 16px;
+}
+
+.Price {
+    display: inline;
+}
+
+.add-to-cart-form{
+    display: inline;
+    float: right;
+}
+
+.col-md-12 > .Description {
+    widows: 270px;
+    height: 120px;
+    text-indent: 20px;
+    text-align: justify;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+
+.btn.add-to-cart {
+    font-size: 16px;
+    margin: 5px;
+}
+
+.thumbnail > img {
+    width: 100%;
+    height: 200px;
+}
+
+.responsive-form {
+    width: 45%;
+    margin: 50px auto;
+}
+
+.responsive-button {
+    font-weight: bold;
+    width: 40%;
+    margin: 10px 23px;
+}
+
+.restaurant-details {
+    text-align: center;
+}
+
+/* ------------------------------------------------ */
+/* -------------------    CART     ---------------- */
+/* ------------------------------------------------ */
+
+img.food-image {
+    height: 100px;
+    width: 150px;
+}
+
+.food-name {
+    display: inline;
+    padding-left: 5px;
+}
+
+input.quantity-box{
+    width: 20%;
+}
+
+.container > .row.cart-item p {
+    font-size: 85%;
+    display: inline;
+}
+
+p.description {
+    font-size: 85%;
+}
+
+.fa.fa-trash {
+    color: #212121;
+}
+
+.fa.fa-trash:hover{
+    color: #ff0000;
+}
+
+button.btn-lg.btn.check-out-button,
+button.btn-lg.btn.empty-cart-button {
+    float: right;
+    margin: 0 10px;
+}
+
+.quantity-group {
+    box-sizing: border-box;
+    width: 105px;
+    max-width: 105px;
+}
+
+.btn.increment,
+.btn.decrement {
+    box-sizing: border-box;
+    width: 30px;
+    max-width: 30px;
+}
+
+input.quantity-box {
+    box-sizing: border-box;
+    width: 45px;
+    max-width: 45px;
+}
+
+/* ------------------------------------------------ */
+/* -------------------   ORDER     ---------------- */
+/* ------------------------------------------------ */
+
+/* ------------------------------------------------- */
+/* -------------------   PROFILE    ---------------- */
+/* ------------------------------------------------- */
+
+/* ------------------------------------------------- */
+/* -------------------   CHECKOUT    --------------- */
+/* ------------------------------------------------- */
+
+
+div.checkout-box{
+    margin-top: 70px;
+    text-align: center;
+}
+
+.fa.fa-check-circle-o {
+    color: green;
+    font-size: 2.5em;
+}
+
+span .fa.fa-check-circle-o {
+    margin-bottom: 10px;
+}
+
+.btn-lg.btn.continue-shopping,
+.btn-lg.btn.view-orders {
+    margin: 0 10px;
+}
+
+/* ------------------------------------------------- */
+/* -------------------   ADMIN       --------------- */
+/* ------------------------------------------------- */
+
+.sidenav {
+    padding: 0;
+    margin: 0;
+}
+
+/* ------------------------------------------------ */
+/* -------------------  USER/NEW   ---------------- */
+/* ------------------------------------------------ */
+
+/* ------------------------------------------------ */
+/* -------------------  ADMIN/USER  --------------- */
+/* ------------------------------------------------ */
+
+button.icon {
+    border:none;
+    background: none;
+}
+
+.fa.fa-pencil {
+    color: #212121;
+}
+
+.fa.fa-pencil:hover{
+    color:#3498DB;
+}
+
+/* ------------------------------------------------ */
+/* -------------------  DASHBOARD   --------------- */
+/* ------------------------------------------------ */
+
+/* .circle-tile {
+    margin-bottom: 15px;
+    text-align: center;
+}
+.circle-tile-heading {
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 100%;
+    color: #FFFFFF;
+    height: 80px;
+    margin: 0 auto -40px;
+    position: relative;
+    transition: all 0.3s ease-in-out 0s;
+    width: 80px;
+}
+.circle-tile-heading .fa {
+    line-height: 80px;
+}
+.circle-tile-content {
+    padding-top: 50px;
+}
+.circle-tile-number {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1;
+    padding: 5px 0 15px;
+}
+.circle-tile-description {
+    text-transform: uppercase;
+}
+.circle-tile-footer {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: rgba(255, 255, 255, 0.5);
+    display: block;
+    padding: 5px;
+    transition: all 0.3s ease-in-out 0s;
+}
+.circle-tile-footer:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+}
+.tile-img {
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.9);
+}
+.circle-tile {
+    margin: 0 auto;
+    width : 80%;
+    padding-top: 7px;
+    margin-bottom: 10px;
+}
+.purple {
+    background-color: #8E44AD;
+}
+.dark-blue {
+    background-color: #34495E;
+}
+.blue {
+    background-color: #2980B9;
+}
+.red {
+    background-color: #E74C3C;
+} */
+
+.fa.fa-file-text {
+    color: #212121;
+}
+
+.fa.fa-file-text:hover{
+    color: #E74C3C;
+}
+
+/* ------------------------------------------------ */
+/* -------------------  ADMINLTE    --------------- */
+/* ------------------------------------------------ */
+
+ul.sidebar-menu {
+    font-size : 16px;
+}
+
+.sidebar-menu li.header {
+    font-size: 16px;
+}
+
+header.main-header {
+    font-size: 14px;
+}    
+
+.main-sidebar {
+    padding-top: 20px;
+}
